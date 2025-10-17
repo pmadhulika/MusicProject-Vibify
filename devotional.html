@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <title>
+              Devotional  songs
+        </title>
+        <style>
+            body{
+                background-image: url(songlistbg.jpeg);
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+             table, th,td
+             {
+                  border:2px rgb(234, 107, 217);
+             }
+             table
+             {
+                border-collapse: collapse;
+                width:100%;
+             }
+             td,th{
+                height: 60px;
+                width: 70px;
+                text-align: center;
+         }
+         td img{
+            border-radius: 20px;
+            width:60px;
+             height:65px;
+             float: left;
+         }
+         .songlist:hover{
+            border: 1px solid black;
+           border-radius: 40px;
+         }
+         .hidden {
+            display: none;
+            /* Add styling for the div at the bottom as needed */
+            /* Set its position to fixed at the bottom of the page */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: url(songlistbg.jpeg);
+            height: 90px;
+            width: 100%;
+            /* Add other styling properties */
+        }
+        audio{
+            width: 93%;
+            padding-bottom: 15px;
+            
+        }
+        #a{
+            height: 70px;
+             width: 70px;
+             padding: 10px;
+             border-radius: 20px;
+        }
+        audio::-webkit-media-controls-panel {
+           background-image: url(songlistbg.jpeg);
+          }
+        </style>
+    </head>
+    <body style="color: black;">
+        <table>
+            <tr style="font-size: xx-large;">
+                <th>S.No</th>
+                <th>Track</th>
+                <th>Artist</th>
+                <th>Album</th>
+                <th>Duration </th>
+            </tr>
+            <tr onclick="showDiv('div2')" class="songlist">
+                <td>1</td>
+                <td><img src="suprabatam.png" ><p style="float: left; padding-left:15px">Sri Venkatesa Suprabatham</p></td>
+                <td> Anuradha Krishnamoorty</td>
+                <td> Suprabatham</td>
+                <td >21:41</td>
+            </tr>
+            <div id="div2" class="hidden">
+                <img src="suprabatam.png" alt="" id="a">
+               <audio src="Sri Venkateshwara Suprabhatham.mp3" controls></audio>
+            </div>
+            <tr onclick="showDiv('div1')" class="songlist">
+                <td>2</td>
+                <td><img src="ganesh.png"><p style="float: left; padding-left:15px">Shree Ganeshay Dheemahi </p></td>
+                <td >
+                    Ajay-Atul</td>
+                <td>Ganesha Symphonic</td>
+                <td>6:48</td>
+            </tr>
+            <div id="div1" class="hidden">
+                <img src="ganesh.png" alt="" id="a">
+               <audio src="Shree Ganeshay.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div3')" class="songlist">
+                <td>3</td>
+                <td><img src="anamaya.png"><p style="float: left; padding-left:15px">Kondalalo Nelakona</p></td>
+                <td >Annnamaya Kerthana,S.P.Balasubramanyam</td>
+                <td>Annamaya</td>
+                <td>1:29</td>
+            </tr>
+            <div id="div3" class="hidden">
+                <img src="anamaya.png" alt="" id="a">
+               <audio src="Kondalalo Nelakonna.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div4')" class="songlist">
+                <td>4</td>
+                <td><img src="hylesa.png"><p style="float: left; padding-left:15px">Hylessa</p></td>
+                <td > m.M.keeravani,Devi Sri Prasad</td>
+                <td>Sri Ramadasu</td>
+                <td>4:16</td>
+            </tr>
+            <div id="div4" class="hidden">
+                <img src="hylesa.png" alt="" id="a">
+               <audio src="Hylessa.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div5')" class="songlist">
+                <td>5</td>
+                <td><img src="govindha.png"><p style="float: left; padding-left:15px">Andhari Bhanduvayaya</p></td>
+                <td > 
+                    S.P.balasubrahmanyam</td>
+                <td>Devullu</td>
+                <td>5:41</td>
+            </tr>
+            <div id="div5" class="hidden">
+                <img src="govindha.png" alt="" id="a">
+               <audio src="Andhari Bhanduvayya.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div6')" class="songlist">
+                <td>6</td>
+                <td><img src="om namo.png"><p style="float: left; padding-left:15px">Govindha Hari Govindha </p></td>
+                <td >Srinidhi,Dhanujay Seepana</td>
+                <td>Om Namo Venkatesaya</td>
+                <td>5:23</td>
+            </tr>
+            <div id="div6" class="hidden">
+                <img src="om namo.png" alt="" id="a">
+               <audio src="Om Namo Venkatesaya.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div7')" class="songlist">
+                <td>7</td>
+                <td><img src="damarukam.png"><p style="float: left; padding-left:15px">Omkaram Srusthi</p></td>
+                <td >Venkata Sai</td>
+                <td>  Damarukam</td>
+                <td>1:04</td>
+            </tr>
+            <div id="div7" class="hidden">
+                <img src="damarukam.png" alt="" id="a">
+               <audio src="Omkaaram.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div8')" class="songlist">
+                <td>8</td>
+                <td><img src="aigiri.png"><p style="float: left; padding-left:15px">Aigri Nanidhi</p></td>
+                <td >Rajalakshmee Sanjay</td>
+                <td>Devotional song</td>
+                <td>15:01</td>
+            </tr>
+            <div id="div8" class="hidden">
+                <img src="aigiri.png" alt="" id="a">
+               <audio src="Aigiri-Nandini.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div9')" class="songlist">
+                <td>9</td>
+                <td><img src="gopala.png"><p style="float: left; padding-left:15px">Gopala Gopala</p></td>
+                <td >Haricharan</td>
+                <td>Gopala Gopala</td>
+                <td>2:33</td>
+            </tr>
+            <div id="div9" class="hidden">
+                <img src="gopala.png" alt="" id="a">
+               <audio src="Bhaje Bhaaje.mp3" controls></audio>
+            </div>
+             <tr  onclick="showDiv('div10')" class="songlist">
+                <td>10</td>
+                <td><img src="lingashtakam.png"><p style="float: left; padding-left:15px">Lingashtakam</p></td>
+                <td >S.P.Balasubrahmanyam,Ramu</td>
+                <td>Shiva Stuthi Stothram</td>
+                <td>3:24</td>
+            </tr>
+            <div id="div10" class="hidden">
+                <img src="lingashtakam.png" alt="" id="a">
+               <audio src="Lingashtakam.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div11')" class="songlist">
+                <td>11</td>
+                <td><img src="venka.jpeg"><p style="float: left; padding-left:15px">Govinda Namalu </p></td>
+                <td >
+                    Rajalakshmee Sanjay</td>
+                <td>Govinga Namallu</td>
+                <td>9:57</td>
+            </tr>
+            <div id="div11" class="hidden">
+                <img src="venka.jpeg" alt="" id="a">
+               <audio src="Srinivasa-Govinda.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div12')" class="songlist">
+                <td>12</td>
+                <td><img src="sadha siva.png"><p style="float: left; padding-left:15px">Sada Siva</p></td>
+                <td > Mani Sharma,Ramesh </td>
+                <td>Khaaleja</td>
+                <td>4:28</td>
+            </tr>
+            <div id="div12" class="hidden">
+                <img src="sadha siva.png" alt="" id="a">
+               <audio src="Sada Siva.mp3" controls></audio>
+            </div>
+            <tr onclick="showDiv('div13')" class="songlist"> 
+                <td>13</td>
+                <td><img src="krishna.png"><p style="float: left; padding-left:15px">Gokula Krishna</p></td>
+                <td >
+                    S.P.Balasubrahmanyam,K.S.Chitra</td>
+                <td>Gokulam lo Seetha </td>
+                <td>5:27</td>
+            </tr>
+            <div id="div13" class="hidden">
+                <img src="krishna.png" alt="" id="a">
+               <audio src="Gokula Krshna.mp3" controls></audio>
+            </div>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <script>
+           // JavaScript function to show/hide divs
+        function showDiv(id) {
+            // Hide all divs with class 'hidden'
+            var divs = document.getElementsByClassName('hidden');
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = 'none';
+            }
+
+            // Show the selected div
+            var selectedDiv = document.getElementById(id);
+            selectedDiv.style.display = 'block';
+        }
+            </script>   
+        </table>
+    </body>
+</html>

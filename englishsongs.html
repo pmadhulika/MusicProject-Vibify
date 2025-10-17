@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <title>
+            English Songs
+        </title>
+        <style>
+            body{
+                background-image: url(songlistbg.jpeg);
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+             table, th,td
+             {
+                  border:2px rgb(234, 107, 217);
+             }
+             table
+             {
+                border-collapse: collapse;
+                width:100%;
+             }
+             td,th{
+                height: 60px;
+                width: 70px;
+                text-align: center;
+         }
+         td img{
+            border-radius: 20px;
+            width:60px;
+             height:70px;
+             float: left;
+         }
+         .songlist:hover{
+            border: 1px solid black;
+           border-radius: 40px;
+         }
+         .hidden {
+            display: none;
+            /* Add styling for the div at the bottom as needed */
+            /* Set its position to fixed at the bottom of the page */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: url(songlistbg.jpeg);
+            height: 90px;
+            width: 100%;
+            /* Add other styling properties */
+        }
+        audio{
+            width: 93%;
+            padding-bottom: 15px;
+            
+        }
+        #a{
+            height: 70px;
+             width: 70px;
+             padding: 10px;
+             border-radius: 20px;
+        }
+        audio::-webkit-media-controls-panel {
+           background-image: url(songlistbg.jpeg);
+          }
+        </style>
+    </head>
+    <body style="color: black;">
+        <table>
+            <tr style="font-size: xx-large;">
+                <th>S.No</th>
+                <th>Track</th>
+                <th>Artist</th>
+                <th>Album</th>
+                <th>Duration </th>
+            </tr>
+            <tr onclick="showDiv('div2')" class="songlist">
+                <td>1</td>
+                <td><img src="lover.jpg" ><p style="float: left; padding-left:15px">Lover</p></td>
+                <td> Taylor Swift</td>
+                <td> Lover</td>
+                <td >3:58</td>
+            </tr>
+            <div id="div2" class="hidden">
+                <img src="lover.jpg" alt="" id="a">
+               <audio src="Lover(PagalWorld).mp3" controls ></audio>
+            </div>
+            <tr onclick="showDiv('div1')" class="songlist">
+                <td>2</td>
+                <td><img src="friends.jpg"><p style="float: left; padding-left:15px">FRIENDS</p></td>
+                <td >
+                    Marshmello, Anne-Marie</td>
+                <td>FRIENDS</td>
+                <td>3:25</td>
+            </tr>
+            <div id="div1" class="hidden">
+                <img src="friends.jpg" alt="" id="a">
+               <audio src="Friends(PaglaSongs).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div3')" class="songlist">
+                <td>3</td>
+                <td><img src="Believer.jpg"><p style="float: left; padding-left:15px">Believer</p></td>
+                <td >  Imagine Dragons</td>
+                <td>Believer</td>
+                <td>3:24</td>
+            </tr>
+            <div id="div3" class="hidden">
+                <img src="Believer.jpg" alt="" id="a">
+               <audio src="Believer(PagalWorld).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div4')" class="songlist">
+                <td>4</td>
+                <td><img src="Paint the town red.jpg"><p style="float: left; padding-left:15px">Paint the town red</p></td>
+                <td >Doja Cat </td>
+                <td>Paint the Town Red</td>
+                <td>4:56</td>
+            </tr>
+            <div id="div4" class="hidden">
+                <img src="Paint the town red.jpg" alt="" id="a">
+               <audio src="Paint-the-Town-Red(PaglaSongs.Com.Se).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div5')" class="songlist">
+                <td>5</td>
+                <td><img src="Im a Rider.jpg"><p style="float: left; padding-left:15px">Im a Rider</p></td>
+                <td > 
+                    Imran Khan</td>
+                <td>Im a Rider</td>
+                <td>3:35</td>
+            </tr>
+            <div id="div5" class="hidden">
+                <img src="Im a Rider.jpg" alt="" id="a">
+               <audio src="I-Am-a-Rider(PagalWorld).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div6')" class="songlist">
+                <td>6</td>
+                <td><img src="let me down slowly.jpg"><p style="float: left; padding-left:15px">Let Me Down Slowly</p></td>
+                <td >  Alec Benjamin  </td>
+                <td>Let Me Down Slowly</td>
+                <td>2:49</td>
+            </tr>
+            <div id="div6" class="hidden">
+                <img src="let me down slowly.jpg" alt="" id="a">
+               <audio src="Let Me Down Slowly Alec Benjamin 128 Kbps.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div7')" class="songlist">
+                <td>7</td>
+                <td><img src="bad boy.jpg"><p style="float: left; padding-left:15px">Bad Boy</p></td>
+                <td > Raaban, Tungevaag</td>
+                <td> Bad Boy </td>
+                <td>3:17</td>
+            </tr>
+            <div id="div7" class="hidden">
+                <img src="bad boy.jpg" alt="" id="a">
+               <audio src="Bad Boy(PagalWorld.com.pe).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div8')" class="songlist">
+                <td>8</td>
+                <td><img src="Infinity.jpg"><p style="float: left; padding-left:15px">Infinity</p></td>
+                <td > Jaymes Young</td>
+                <td>Infinity</td>
+                <td>3:57</td>
+            </tr>
+            <div id="div8" class="hidden">
+                <img src="Infinity.jpg" alt="" id="a">
+               <audio src="Infinity(PaglaSongs).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div9')" class="songlist">
+                <td>9</td>
+                <td><img src="Calm down.jpg"><p style="float: left; padding-left:15px">Calm down</p></td>
+                <td >Rema, Selena Gomez</td>
+                <td>Calm Down </td>
+                <td>3:59</td>
+            </tr>
+            <div id="div9" class="hidden">
+                <img src="Calm down.jpg" alt="" id="a">
+               <audio src="Calm-Down-Calm-Down(PaglaSongs).mp3" controls></audio>
+            </div>
+             <tr  onclick="showDiv('div10')" class="songlist">
+                <td>10</td>
+                <td><img src="Without me.jpg"><p style="float: left; padding-left:15px">Without me </p></td>
+                <td > Halsey</td>
+                <td>Without me</td>
+                <td>3:56</td>
+            </tr>
+            <div id="div10" class="hidden">
+                <img src="Without me.jpg" alt="" id="a">
+               <audio src="Without-Me---Halsey-(PagalWorld).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div11')" class="songlist">
+                <td>11</td>
+                <td><img src="Cruel Summer.jpg"><p style="float: left; padding-left:15px">Cruel Summer</p></td>
+                <td >
+                    Taylor Swift</td>
+                <td>Lover</td>
+                <td>2:59</td>
+            </tr>
+            <div id="div11" class="hidden">
+                <img src="Cruel Summer.jpg" alt="" id="a">
+               <audio src="Taylor-Swift--Cruel-Summer(pagalworld.co.uk).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div12')" class="songlist">
+                <td>12</td>
+                <td><img src="shape of u.jpg"><p style="float: left; padding-left:15px">Shape of You</p></td>
+                <td >  Ed Sheeran</td>
+                <td>Shape of You</td>
+                <td>4:24</td>
+            </tr>
+            <div id="div12" class="hidden">
+                <img src="shape of u.jpg" alt="" id="a">
+               <audio src="Shape-of-You-(Lofi)(PagalWorldl).mp3" controls></audio>
+            </div>
+            <tr onclick="showDiv('div13')" class="songlist"> 
+                <td>13</td>
+                <td><img src="Mocking bird.jpg"><p style="float: left; padding-left:15px">Mocking bird</p></td>
+                <td >
+                    Eminem</td>
+                <td>Encore </td>
+                <td>3:49</td>
+            </tr>
+            <div id="div13" class="hidden">
+                <img src="Mocking bird.jpg" alt="" id="a">
+               <audio src="Mockingbird(PaglaSongs).mp3" controls></audio>
+            </div>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <script>
+           // JavaScript function to show/hide divs
+        function showDiv(id) {
+            // Hide all divs with class 'hidden'
+            var divs = document.getElementsByClassName('hidden');
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = 'none';
+            }
+
+            // Show the selected div
+            var selectedDiv = document.getElementById(id);
+            selectedDiv.style.display = 'block';
+        }
+            </script>   
+        </table>
+    </body>
+</html>

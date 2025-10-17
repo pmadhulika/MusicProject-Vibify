@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <title>
+            Hindi Songs
+        </title>
+        <style>
+            body{
+                background-image: url(songlistbg.jpeg);
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+             table, th,td
+             {
+                  border:2px rgb(234, 107, 217);
+             }
+             table
+             {
+                border-collapse: collapse;
+                width:100%;
+             }
+             td,th{
+                height: 60px;
+                width: 70px;
+                text-align: center;
+         }
+         td img{
+            border-radius: 20px;
+            width:60px;
+             height:65px;
+             float: left;
+         }
+         .songlist:hover{
+            border: 1px solid black;
+           border-radius: 40px;
+         }
+         .hidden {
+            display: none;
+            /* Add styling for the div at the bottom as needed */
+            /* Set its position to fixed at the bottom of the page */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: url(songlistbg.jpeg);
+            height: 90px;
+            width: 100%;
+            /* Add other styling properties */
+        }
+        audio{
+            width: 93%;
+            padding-bottom: 15px;
+            
+        }
+        #a{
+            height: 70px;
+             width: 70px;
+             padding: 10px;
+             border-radius: 20px;
+        }
+        audio::-webkit-media-controls-panel {
+           background-image: url(songlistbg.jpeg);
+          }
+        </style>
+    </head>
+    <body style="color: black;">
+        <table>
+            <tr style="font-size: xx-large;">
+                <th>S.No</th>
+                <th>Track</th>
+                <th>Artist</th>
+                <th>Album</th>
+                <th>Duration </th>
+            </tr>
+            <tr onclick="showDiv('div2')" class="songlist">
+                <td>1</td>
+                <td><img src="apnabanale.webp" ><p style="float: left; padding-left:15px">Apna Bana le</p></td>
+                <td> Arijit Singh</td>
+                <td> Bhediya</td>
+                <td >3:24</td>
+            </tr>
+            <div id="div2" class="hidden">
+                <img src="apnabanale.webp" alt="" id="a">
+               <audio src="Apna-Bana-Le(PagalWorld).mp3" controls autoplay></audio>
+            </div>
+            <tr onclick="showDiv('div1')" class="songlist">
+                <td>2</td>
+                <td><img src="lutgaye.jpg"><p style="float: left; padding-left:15px">Lut Gaye </p></td>
+                <td >
+                    Emraan Hashmi</td>
+                <td>Lut Gaye</td>
+                <td>3:48</td>
+            </tr>
+            <div id="div1" class="hidden">
+                <img src="lutgaye.jpg" alt="" id="a">
+               <audio src="Lut-Gaye(PagalWorld).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div3')" class="songlist">
+                <td>3</td>
+                <td><img src="ratan.jpg"><p style="float: left; padding-left:15px">Raataan Lambiyan</p></td>
+                <td > Tanishk Bagchi, Jubin Nautiyal,Asees Kaur</td>
+                <td>Shershaah</td>
+                <td>3:50</td>
+            </tr>
+            <div id="div3" class="hidden">
+                <img src="ratan.jpg" alt="" id="a">
+               <audio src="Raatan Lambiyan(PagalWorld.com.se).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div4')" class="songlist">
+                <td>4</td>
+                <td><img src="barsat.jpg"><p style="float: left; padding-left:15px">Barsaat Ki Dhun</p></td>
+                <td > Jubin Nautiyal</td>
+                <td>Barsaat Ki Dhun</td>
+                <td>4:19</td>
+            </tr>
+            <div id="div4" class="hidden">
+                <img src="barsat.jpg" alt="" id="a">
+               <audio src="Barsaat Ki Dhun(PagalWorld.com.se).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div5')" class="songlist">
+                <td>5</td>
+                <td><img src="thodathoda.jpg"><p style="float: left; padding-left:15px">Thoda Thoda Pyaar</p></td>
+                <td > 
+                    Stebin Ben</td>
+                <td>Thoda Thoda Pyaar</td>
+                <td>4:32</td>
+            </tr>
+            <div id="div5" class="hidden">
+                <img src="thodathoda.jpg" alt="" id="a">
+               <audio src="Thoda-Thoda-Pyar(PagalWorld).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div6')" class="songlist">
+                <td>6</td>
+                <td><img src="terachehra.jpg"><p style="float: left; padding-left:15px">Tera Chehra</p></td>
+                <td > Arijit Singh  </td>
+                <td>Sanam Teri Kasam</td>
+                <td>4:49</td>
+            </tr>
+            <div id="div6" class="hidden">
+                <img src="terachehra.jpg" alt="" id="a">
+               <audio src="Tera Chehra(PagalWorld.com.se).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div7')" class="songlist">
+                <td>7</td>
+                <td><img src="kesariya.jpg"><p style="float: left; padding-left:15px">Kesariya</p></td>
+                <td >Arijit Singh</td>
+                <td>  Brahmastra</td>
+                <td>4:28</td>
+            </tr>
+            <div id="div7" class="hidden">
+                <img src="kesariya.jpg" alt="" id="a">
+               <audio src="Kesariya Tera Ishq Hai Piya(PagalWorld.com.se).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div8')" class="songlist">
+                <td>8</td>
+                <td><img src="Bekhayali.jpg"><p style="float: left; padding-left:15px">Bekhayali</p></td>
+                <td >Sachet Tandon</td>
+                <td>Kabir Singh</td>
+                <td>6:11</td>
+            </tr>
+            <div id="div8" class="hidden">
+                <img src="Bekhayali.jpg" alt="" id="a">
+               <audio src="Bekhayali(PagalWorld.com.se).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div9')" class="songlist">
+                <td>9</td>
+                <td><img src="Soch Na Sake.jpg"><p style="float: left; padding-left:15px">Soch Na Sake</p></td>
+                <td >Arijit Singh, Tulsi Kumar, Amaal Mallik</td>
+                <td>Airlift </td>
+                <td>4:40</td>
+            </tr>
+            <div id="div9" class="hidden">
+                <img src="Soch Na Sake.jpg" alt="" id="a">
+               <audio src="128-Soch Na Sake - Airlift 128 Kbps.mp3" controls></audio>
+            </div>
+             <tr  onclick="showDiv('div10')" class="songlist">
+                <td>10</td>
+                <td><img src="tumhiho.jpg"><p style="float: left; padding-left:15px">Tum Hi Ho </p></td>
+                <td >Arijit Singh</td>
+                <td>Aashiqui 2</td>
+                <td>4:22</td>
+            </tr>
+            <div id="div10" class="hidden">
+                <img src="tumhiho.jpg" alt="" id="a">
+               <audio src="Tum Hi Ho_192(Ghantalele.com).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div11')" class="songlist">
+                <td>11</td>
+                <td><img src="Agar Tum Saath Ho.jpg"><p style="float: left; padding-left:15px">Agar Tum Saath Ho  </p></td>
+                <td >
+                    Alka Yagnik, Arijit Singh</td>
+                <td>Tamasha</td>
+                <td>5:41</td>
+            </tr>
+            <div id="div11" class="hidden">
+                <img src="Agar Tum Saath Ho.jpg" alt="" id="a">
+               <audio src="Agar Tum Saath Ho(PagalWorld.com.se).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div12')" class="songlist">
+                <td>12</td>
+                <td><img src="Khairiyat.jpg"><p style="float: left; padding-left:15px">Khairiyat</p></td>
+                <td > Arjith Singh</td>
+                <td>Chhichhore </td>
+                <td>4:40</td>
+            </tr>
+            <div id="div12" class="hidden">
+                <img src="Khairiyat.jpg" alt="" id="a">
+               <audio src="Khairiyat(PagalWorld.com.se).mp3" controls></audio>
+            </div>
+            <tr onclick="showDiv('div13')" class="songlist"> 
+                <td>13</td>
+                <td><img src="Ae Dil Hai Mushkil.jpg"><p style="float: left; padding-left:15px">Ae Dil Hai Mushkil</p></td>
+                <td >
+                    Pritam, Arijit Singh</td>
+                <td>Ae Dil Hai Mushkil </td>
+                <td>4:29</td>
+            </tr>
+            <div id="div13" class="hidden">
+                <img src="Ae Dil Hai Mushkil.jpg" alt="" id="a">
+               <audio src="Ae Dil Hai Mushkil Title Track(PagalWorld.com.se).mp3" controls></audio>
+            </div>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <script>
+           // JavaScript function to show/hide divs
+        function showDiv(id) {
+            // Hide all divs with class 'hidden'
+            var divs = document.getElementsByClassName('hidden');
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = 'none';
+            }
+
+            // Show the selected div
+            var selectedDiv = document.getElementById(id);
+            selectedDiv.style.display = 'block';
+        }
+            </script>   
+        </table>
+    </body>
+</html>

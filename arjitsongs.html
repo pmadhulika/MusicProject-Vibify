@@ -1,0 +1,240 @@
+<html>
+    <head>
+        <title>
+        Arjith Singh
+        </title>
+        <style>
+            body{
+                background-image: url(songlistbg.jpeg);
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+             table, th,td
+             {
+                  border:2px rgb(234, 107, 217);
+             }
+             table
+             {
+                border-collapse: collapse;
+                width:90%;
+             }
+             td,th{
+                height: 60px;
+                width: 10px;
+                text-align: center;
+         }
+         td img{
+            border-radius: 20px;
+            width:60px;
+             height:70px;
+             float: left;
+         }
+         .songlist:hover{
+            border: 1px solid black;
+           border-radius: 40px;
+         }
+         .hidden {
+            display: none;
+            /* Add styling for the div at the bottom as needed */
+            /* Set its position to fixed at the bottom of the page */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: url(songlistbg.jpeg);
+            height: 90px;
+            width: 100%;
+            /* Add other styling properties */
+        }
+        audio{
+            width: 93%;
+            padding-bottom: 15px;
+            
+        }
+        #a{
+            height: 70px;
+             width: 70px;
+             padding: 10px;
+             border-radius: 20px;
+        }
+        audio::-webkit-media-controls-panel{
+           background-image: url(songlistbg.jpeg);
+          }
+        </style>
+    </head>
+    <body style="color: black;">
+        <center>
+        <table>
+            <tr style="font-size: xx-large;">
+                <th>S.No</th>
+                <th>Track</th>
+                <th>Album</th>
+                <th>Duration </th>
+            </tr>
+            <tr onclick="showDiv('div2')" class="songlist">
+                <td>1</td>
+                <td><img src="ig4.jpg" ><p style="float: left; padding-left:15px">Heeriye</p></td>
+                <td>Heeriye</td>
+                <td >3:14</td>
+            </tr>
+            <div id="div2" class="hidden">
+                <img src="ig4.jpg" alt="" id="a">
+               <audio src="Heeriye-(PagalWorld).mp3" controls></audio>
+            </div>
+            <tr onclick="showDiv('div1')" class="songlist">
+                <td>2</td>
+                <td><img src="jhumka.jpeg"><p style="float: left; padding-left:15px">What Jumka?</p></td>
+                <td>Rocky aur Rani ki prem kahani</td>
+                <td>3:33</td>
+            </tr>
+            <div id="div1" class="hidden">
+                <img src="jhumka.jpeg" alt="" id="a">
+               <audio src="What Jhumka(PagalWorld.com.pe).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div3')" class="songlist">
+                <td>3</td>
+                <td><img src="chaleya.jpeg"><p style="float: left; padding-left:15px">Chaleya</p></td>
+                <td>Jawaan</td>
+                <td>3:20</td>
+            </tr>
+            <div id="div3" class="hidden">
+                <img src="chaleya.jpeg" alt="" id="a">
+               <audio src="Chaleya Jawan 128 Kbps.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div4')" class="songlist">
+                <td>4</td>
+                <td><img src="deva deva.jpeg.jpg"><p style="float: left; padding-left:15px">Deva Deva </p></td>
+                
+                <td>Brahmastra</td>
+                <td>1:58</td>
+            </tr>
+            <div id="div4" class="hidden">
+                <img src="deva deva.jpeg.jpg" alt="" id="a">
+               <audio src="Deva Deva(PagalWorld.com.pe).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div5')" class="songlist">
+                <td>5</td>
+                <td><img src="o bedardeya.jpg"><p style="float: left; padding-left:15px">O Bedardeya</p></td>
+                
+                <td>Tu Joothi Main Makkar</td>
+                <td>5:13</td>
+            </tr>
+            <div id="div5" class="hidden">
+                <img src="o bedardeya.jpg" alt="" id="a">
+               <audio src="O Bedardeya(PagalWorld.com.pe).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div6')" class="songlist">
+                <td>6</td>
+                <td><img src="khairyat.jpg"><p style="float: left; padding-left:15px">Khairiyat</p></td>
+                <td >Chhichhore</td>
+                <td>4:34</td>
+            </tr>
+            <div id="div6" class="hidden">
+                <img src="khairyat.jpg" alt="" id="a">
+               <audio src="Khairiyat Chhichhore 128 Kbps.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div7')" class="songlist">
+                <td>7</td>
+                <td><img src="apna bana le.jpeg.jpg"><p style="float: left; padding-left:15px">Apna Bana le</p></td>
+                <td >Bhediya</td>
+                <td>5:19</td>
+            </tr>
+            <div id="div7" class="hidden">
+                <img src="apna bana le.jpeg.jpg" alt="" id="a">
+               <audio src="Apna-Bana-Le(PagalWorld).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div8')" class="songlist">
+                <td>8</td>
+                <td><img src="khulke.jpeg.jpg"><p style="float: left; padding-left:15px">Khulke Jeene Ka</p></td>
+                <td >Dil Bechara</td>
+                <td>4:06</td>
+            </tr>
+            <div id="div8" class="hidden">
+                <img src="khulke.jpeg.jpg" alt="" id="a">
+               <audio src="Khulke-Jeene-Ka(PaglaSongs).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div9')" class="songlist">
+                <td>9</td>
+                <td><img src="tera yaar.jpg"><p style="float: left; padding-left:15px">Tera Yaar Hoon Main</p></td>
+                <td >Sonu ke Titu ki Sweety</td>
+                <td>4:24
+                </td>
+            </tr>
+            <div id="div9" class="hidden">
+                <img src="tera yaar.jpg" alt="" id="a">
+               <audio src="Tera Yaar Hoon Main(PagalWorld.com.pe).mp3" controls></audio>
+            </div>
+             <tr  onclick="showDiv('div10')" class="songlist">
+                <td>10</td>
+                <td><img src="ae dil hai mushkil.jpg"><p style="float: left; padding-left:15px">Ae Dil Hai Mushkil</p></td>
+                <td>Ae Dil Hai Mushkil</td>
+                <td>3:57</td>
+            </tr>
+            <div id="div10" class="hidden">
+                <img src="ae dil hai mushkil.jpg" alt="" id="a">
+               <audio src="Ae Dil Hai Mushkil Title Track Pritam 128 Kbps.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div11')" class="songlist">
+                <td>11</td>
+                <td><img src="Bekhayali.jpg"><p style="float: left; padding-left:15px">Bekhayali</p></td>
+            
+                <td>Kabir Singh</td>
+                <td>6:10</td>
+            </tr>
+            <div id="div11" class="hidden">
+                <img src="Bekhayali.jpg" alt="" id="a">
+               <audio src="Bekhayali(Mr-Jatt1.com).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div12')" class="songlist">
+                <td>12</td>
+                <td><img src="hawayein.jpeg"><p style="float: left; padding-left:15px">Hawayein</p></td>
+               
+                <td>Jab Harry Met Sejal</td>
+                <td>4:49</td>
+            </tr>
+            <div id="div12" class="hidden">
+                <img src="hawayein.jpeg" alt="" id="a">
+               <audio src="128-Hawayein - Jab Harry Met Sejal 128 Kbps.mp3" controls></audio>
+            </div>
+            <tr onclick="showDiv('div13')" class="songlist"> 
+                <td>13</td>
+                <td><img src="mast magan.jpeg.jpg"><p style="float: left; padding-left:15px">Mast Magan</p></td>
+                
+                <td>2 States</td>
+                <td>4:40</td>
+            </tr>
+            <div id="div13" class="hidden">
+                <img src="mast magan.jpeg.jpg" alt="" id="a">
+               <audio src="Mast Magan 2 States 128 Kbps.mp3" controls></audio>
+            </div>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <script>
+           // JavaScript function to show/hide divs
+           function showDiv(id) 
+           {
+            var divs = document.getElementsByClassName('hidden');
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = 'none';
+            }
+            var selectedDiv = document.getElementById(id);
+            selectedDiv.style.display = 'block';
+        }
+            </script> 
+        </table>
+        </center>
+    </body>
+</html>

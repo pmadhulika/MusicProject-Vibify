@@ -1,0 +1,248 @@
+<html>
+    <head>
+        <title>
+            malayalam songs
+        </title>
+        <style>
+            body{
+                background-image: url(songlistbg.jpeg);
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+             table, th,td
+             {
+                  border:2px rgb(234, 107, 217);
+             }
+             table
+             {
+                border-collapse: collapse;
+                width:100%;
+             }
+             td,th{
+                height: 60px;
+                width: 70px;
+                text-align: center;
+         }
+         td img{
+            border-radius: 20px;
+            width:60px;
+             height:70px;
+             float: left;
+         }
+         .songlist:hover{
+            border: 1px solid black;
+           border-radius: 40px;
+         }
+         .hidden {
+            display: none;
+            /* Add styling for the div at the bottom as needed */
+            /* Set its position to fixed at the bottom of the page */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: url(songlistbg.jpeg);
+            height: 90px;
+            width: 100%;
+            /* Add other styling properties */
+        }
+        audio{
+            width: 93%;
+            padding-bottom: 15px;
+            
+        }
+        #a{
+            height: 70px;
+             width: 70px;
+             padding: 10px;
+             border-radius: 20px;
+        }
+        audio::-webkit-media-controls-panel {
+           background-image: url(songlistbg.jpeg);
+          }
+        </style>
+    </head>
+    <body style="color: black;">
+        <table>
+            <tr style="font-size: xx-large;">
+                <th>S.No</th>
+                <th>Track</th>
+                <th>Artist</th>
+                <th>Album</th>
+                <th>Duration </th>
+            </tr>
+            <tr onclick="showDiv('div2')" class="songlist">
+                <td>1</td>
+                <td><img src="kalapakkara.jpg" ><p style="float: left; padding-left:15px">Kalapakkara</p></td>
+                <td> Jakes Bejoy,Shreya Ghoshal,Benny Dayal</td>
+                <td>King Of Kotha</td>
+                <td >4:12</td>
+            </tr>
+            <div id="div2" class="hidden">
+                <img src="kalapakkara.jpg" alt="" id="a">
+               <audio src="kalapakkara.mp3" controls autoplay></audio>
+            </div>
+            <tr onclick="showDiv('div1')" class="songlist">
+                <td>2</td>
+                <td><img src="Darshana.jpg"><p style="float: left; padding-left:15px">Darshana</p></td>
+                <td >Hesham Abdul Wahab,Darshana Rajendran</td>
+                <td>Hridayam</td>
+                <td>3:45</td>
+            </tr>
+            <div id="div1" class="hidden">
+                <img src="Darshana.jpg" alt="" id="a">
+               <audio src="Darshana.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div3')" class="songlist">
+                <td>3</td>
+                <td><img src="Pavizha Mazha.jpg"><p style="float: left; padding-left:15px">Pavizha Mazha</p></td>
+                <td >K S Harisankar</td>
+                <td>Athiran</td>
+                <td>3:53</td>
+            </tr>
+            <div id="div3" class="hidden">
+                <img src="Pavizha Mazha.jpg" alt="" id="a">
+               <audio src="Pavizha Mazha.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div4')" class="songlist">
+                <td>4</td>
+                <td><img src="Onakka Munthiri.jpg"><p style="float: left; padding-left:15px">Onakka Munthiri</p></td>
+                <td > Divya Vineeth</td>
+                <td>Hridayam</td>
+                <td>1:58</td>
+            </tr>
+            <div id="div4" class="hidden">
+                <img src="Onakka Munthiri.jpg" alt="" id="a">
+               <audio src="Onakka Munthiri.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div5')" class="songlist">
+                <td>5</td>
+                <td><img src="Malare.jpg"><p style="float: left; padding-left:15px">Malare </p></td>
+                <td >Vijay Yesudas</td>
+                <td>Premam</td>
+                <td>5:16</td>
+            </tr>
+            <div id="div5" class="hidden">
+                <img src="Malare.jpg" alt="" id="a">
+               <audio src="Malare.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div6')" class="songlist">
+                <td>6</td>
+                <td><img src="Ini Dooram.jpg"><p style="float: left; padding-left:15px">Ini Dooram</p></td>
+                <td >Sankar Sharma,K S Harisankar</td>
+                <td>Sunny</td>
+                <td>2:59</td>
+            </tr>
+            <div id="div6" class="hidden">
+                <img src="Ini Dooram.jpg" alt="" id="a">
+               <audio src="Ini Dooram.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div7')" class="songlist">
+                <td>7</td>
+                <td><img src="Maangalyam.jpg"><p style="float: left; padding-left:15px">Maangalyam</p></td>
+                <td >Gopi Sunder, Vijay Yesudas,Sachin Warrier</td>
+                <td>  Bangalore Days</td>
+                <td>3:54</td>
+            </tr>
+            <div id="div7" class="hidden">
+                <img src="Maangalyam.jpg" alt="" id="a">
+               <audio src="Maangalyam.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div8')" class="songlist">
+                <td>8</td>
+                <td><img src="En kanavil.jpg"><p style="float: left; padding-left:15px">En kanavil</p></td>
+                <td >Sankar Sharma,Arun Alat,Sony Mohan</td>
+                <td>4 Years</td>
+                <td>6:25</td>
+            </tr>
+            <div id="div8" class="hidden">
+                <img src="En kanavil.jpg" alt="" id="a">
+               <audio src="En kanavil.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div9')" class="songlist">
+                <td>9</td>
+                <td><img src="Uyire.jpg"><p style="float: left; padding-left:15px">Uyire</p></td>
+                <td >Sid Sriram, Ankit Menon</td>
+                <td>Gauthamante Radham</td>
+                <td>3:19</td>
+            </tr>
+            <div id="div9" class="hidden">
+                <img src="Uyire.jpg" alt="" id="a">
+               <audio src="Uyire.mp3" controls></audio>
+            </div>
+             <tr  onclick="showDiv('div10')" class="songlist">
+                <td>10</td>
+                <td><img src="Kudukku.jpg"><p style="float: left; padding-left:15px">Kudukku</p></td>
+                <td >Vineeth Sreenivasan</td>
+                <td>Love Action Drama</td>
+                <td>2:37</td>
+            </tr>
+            <div id="div10" class="hidden">
+                <img src="Kudukku.jpg" alt="" id="a">
+               <audio src="Kudukku.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div11')" class="songlist">
+                <td>11</td>
+                <td><img src="Olluleru.jpg"><p style="float: left; padding-left:15px">Ollulleru </p></td>
+                <td>Justin Varghese</td>
+                <td>Ajagajantharam</td>
+                <td>3:22</td>
+            </tr>
+            <div id="div11" class="hidden">
+                <img src="Olluleru.jpg" alt="" id="a">
+               <audio src="Ollulleru.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div12')" class="songlist">
+                <td>12</td>
+                <td><img src="Chundari Penne.jpg"><p style="float: left; padding-left:15px">Chundari Penne</p></td>
+                <td > Dulquer Salmaan,Gopi Sunder</td>
+                <td>Charlie</td>
+                <td>3:58</td>
+            </tr>
+            <div id="div12" class="hidden">
+                <img src="Chundari Penne.jpg" alt="" id="a">
+               <audio src="Chundari Penne.mp3" controls></audio>
+            </div>
+            <tr onclick="showDiv('div13')" class="songlist"> 
+                <td>13</td>
+                <td><img src="Aaromal.jpg"><p style="float: left; padding-left:15px">Aaromal</p></td>
+                <td >Vishal Chandrasekhar,Sooraj Santosh</td>
+                <td>Sita Ramam </td>
+                <td>3:38</td>
+            </tr>
+            <div id="div13" class="hidden">
+                <img src="Aaromal.jpg" alt="" id="a">
+               <audio src="Aaromal.mp3" controls></audio>
+            </div>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <script>
+           // JavaScript function to show/hide divs
+        function showDiv(id) {
+            // Hide all divs with class 'hidden'
+            var divs = document.getElementsByClassName('hidden');
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = 'none';
+            }
+
+            // Show the selected div
+            var selectedDiv = document.getElementById(id);
+            selectedDiv.style.display = 'block';
+        }
+            </script>   
+        </table>
+    </body>
+</html>

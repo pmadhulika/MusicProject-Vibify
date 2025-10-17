@@ -1,0 +1,261 @@
+<html>
+    <head>
+        <title>
+            kannada songs
+        </title>
+        <style>
+            body{
+                background-image: url(songlistbg.jpeg);
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+             table, th,td
+             {
+                  border:2px rgb(234, 107, 217);
+             }
+             table
+             {
+                border-collapse: collapse;
+                width:100%;
+             }
+             td,th{
+                height: 60px;
+                width: 70px;
+                text-align: center;
+         }
+         td img{
+            border-radius: 20px;
+            width:60px;
+             height:65px;
+             float: left;
+         }
+         .songlist:hover{
+            border: 1px solid black;
+           border-radius: 40px;
+         }
+         .hidden {
+            display: none;
+            /* Add styling for the div at the bottom as needed */
+            /* Set its position to fixed at the bottom of the page */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: url(songlistbg.jpeg);
+            height: 90px;
+            width: 100%;
+            /* Add other styling properties */
+        }
+        audio{
+            width: 93%;
+            padding-bottom: 15px;
+            
+        }
+        #a{
+            height: 70px;
+             width: 70px;
+             padding: 10px;
+             border-radius: 20px;
+        }
+        audio::-webkit-media-controls-panel {
+           background-image: url(songlistbg.jpeg);
+          }
+        </style>
+    </head>
+    <body style="color: black;">
+        <table>
+            <tr style="font-size: xx-large;">
+                <th>S.No</th>
+                <th>Track</th>
+                <th>Artist</th>
+                <th>Album</th>
+                <th>Duration </th>
+            </tr>
+            <tr onclick="showDiv('div2')" class="songlist">
+                <td>1</td>
+                <td><img src="badboys.webp" ><p style="float: left; padding-left:15px">Bad Boys </p></td>
+                <td> 
+                    Rahul Dito, MC Bijju, Charan Raj
+                    </td>
+                <td> Bheema/td>
+                <td >2:31</td>
+            </tr>
+            <div id="div2" class="hidden">
+                <img src="badboys.webp" alt="" id="a">
+               <audio src="badboy.mp3" controls ></audio>
+            </div>
+            <tr onclick="showDiv('div1')" class="songlist">
+                <td>2</td>
+                <td><img src="omg.webp"><p style="float: left; padding-left:15px">OGM  </p></td>
+                <td >Aishwarya Rangarajan, MC Chetan, Jithin Raj</td>
+                <td>Ghost</td>
+                <td>2:45</td>
+            </tr>
+            <div id="div1" class="hidden">
+                <img src="omg.webp" alt="" id="a">
+               <audio src="ogm.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div3')" class="songlist">
+                <td>3</td>
+                <td><img src="sapta.webp"><p style="float: left; padding-left:15px">Sapta Sagaradaache Ello - Side A </p></td>
+                <td >Charan Raj, Kapil Kapilan</td>
+                <td>Sapta Sagaradaache Ello </td>
+                <td>4:15</td>
+            </tr>
+            <div id="div3" class="hidden">
+                <img src="sapta.webp" alt="" id="a">
+               <audio src="Sapta Sagaradaache Ello Title Track.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div4')" class="songlist">
+                <td>4</td>
+                <td><img src="sanje.webp"><p style="float: left; padding-left:15px">Sanje Mele </p></td>
+                <td > 
+                    Vijay Prakash, Poornachandra Thejaswi</td>
+                <td>Matinee</td>
+                <td>4:26</td>
+            </tr>
+            <div id="div4" class="hidden">
+                <img src="sanje.webp" alt="" id="a">
+               <audio src="Sanje Mele From Matinee- (DjTikku.IN).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div5')" class="songlist">
+                <td>5</td>
+                <td><img src="pallaki.webp"><p style="float: left; padding-left:15px">Pallakki Olaga</p></td>
+                <td > 
+                    
+Santhosh Venky, Ravi Basrur</td>
+                <td>Kshetrapathi</td>
+                <td>3:37</td>
+            </tr>
+            <div id="div5" class="hidden">
+                <img src="pallaki.webp" alt="" id="a">
+               <audio src="pallaki.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div6')" class="songlist">
+                <td>6</td>
+                <td><img src="muddu.webp"><p style="float: left; padding-left:15px">Muddu Rakshasi</p></td>
+                <td >
+                    Vijay Prakash, Harshika Devanath</td>
+                <td>Muddu Rakshasi</td>
+                <td>
+                    3:32</td>
+            </tr>
+            <div id="div6" class="hidden">
+                <img src="muddu.webp" alt="" id="a">
+               <audio src="muddu.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div7')" class="songlist">
+                <td>7</td>
+                <td><img src="singara.webp"><p style="float: left; padding-left:15px">Singara Siriye</p></td>
+                <td >B. Ajaneesh Loknath, Vijay Prakash, Ananya Bhat</td>
+                <td>  Kantara</td>
+                <td>
+                    4:41</td>
+            </tr>
+            <div id="div7" class="hidden">
+                <img src="singara.webp" alt="" id="a">
+               <audio src="singara.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div8')" class="songlist">
+                <td>8</td>
+                <td><img src="horrata.webp"><p style="float: left; padding-left:15px">Horaata </p></td>
+                <td >
+                    Charan Raj, MC Bijju, Kiran Kaverappa, Keerthan Holla</td>
+                <td>Sapta Sagaradaache Ello - Side A</td>
+                <td>3:08</td>
+            </tr>
+            <div id="div8" class="hidden">
+                <img src="horrata.webp" alt="" id="a">
+               <audio src="horata.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div9')" class="songlist">
+                <td>9</td>
+                <td><img src="preethi.webp"><p style="float: left; padding-left:15px">Preethisuve</p></td>
+                <td >
+                    Sonu Nigam</td>
+                <td>Kousalya Supraja Rama</td>
+                <td>3:42</td>
+            </tr>
+            <div id="div9" class="hidden">
+                <img src="preethi.webp" alt="" id="a">
+               <audio src="preethi.mp3" controls></audio>
+            </div>
+             <tr  onclick="showDiv('div10')" class="songlist">
+                <td>10</td>
+                <td><img src="naa driver.webp"><p style="float: left; padding-left:15px">NaaDriver NiNanna Lover Janapada</p></td>
+                <td >Malu Nipanal Singer</td>
+                <td>Naa Driver Ni Nanna Lover Janapada</td>
+                <td>9:39</td>
+            </tr>
+            <div id="div10" class="hidden">
+                <img src="naa driver.webp" alt="" id="a">
+               <audio src="Na-Driver-Janapada(PaglaSongs).mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div11')" class="songlist">
+                <td>11</td>
+                <td><img src="belakina.webp"><p style="float: left; padding-left:15px">Belakina Kavithe  </p></td>
+                <td >
+Sanjith Hegde, Sangeetha Ravindranath</td>
+                <td>Banaras</td>
+                <td>3:37</td>
+            </tr>
+            <div id="div11" class="hidden">
+                <img src="belakina.webp" alt="" id="a">
+               <audio src="belakina.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div12')" class="songlist">
+                <td>12</td>
+                <td><img src="nenne.webp"><p style="float: left; padding-left:15px">Nenne Tanaka</p></td>
+                <td >
+                    Sanjith Hegde, Arjun Janya</td>
+                <td>Trivikrama</td>
+                <td>4:17</td>
+            </tr>
+            <div id="div12" class="hidden">
+                <img src="nenne.webp" alt="" id="a">
+               <audio src="nenjame.mp3" controls></audio>
+            </div>
+            <tr onclick="showDiv('div13')" class="songlist"> 
+                <td>13</td>
+                <td><img src="gillaka.webp"><p style="float: left; padding-left:15px">Gillakko Shiva</p></td>
+                <td >
+                    Mangli</td>
+                <td>Vedha </td>
+                <td>4:04</td>
+            </tr>
+            <div id="div13" class="hidden">
+                <img src="gillaka.webp" alt="" id="a">
+               <audio src="gillaka.mp3" controls></audio>
+            </div>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <script>
+           // JavaScript function to show/hide divs
+        function showDiv(id) {
+            // Hide all divs with class 'hidden'
+            var divs = document.getElementsByClassName('hidden');
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = 'none';
+            }
+
+            // Show the selected div
+            var selectedDiv = document.getElementById(id);
+            selectedDiv.style.display = 'block';
+        }
+            </script>   
+        </table>
+    </body>
+</html>

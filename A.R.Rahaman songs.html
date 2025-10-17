@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <title>
+            A R Rahman songs
+        </title>
+        <style>
+            body{
+                background-image: url(songlistbg.jpeg);
+                background-size:cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+             table, th,td
+             {
+                  border:2px rgb(234, 107, 217);
+             }
+             table
+             {
+                border-collapse: collapse;
+                width:90%;
+             }
+             td,th{
+                height: 60px;
+                width: 10px;
+                text-align: center;
+         }
+         td img{
+            border-radius: 20px;
+            width:60px;
+             height:70px;
+             float: left;
+         }
+         .songlist:hover{
+            border: 1px solid black;
+           border-radius: 40px;
+         }
+         .hidden {
+            display: none;
+            /* Add styling for the div at the bottom as needed */
+            /* Set its position to fixed at the bottom of the page */
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: url(songlistbg.jpeg);
+            height: 90px;
+            width: 100%;
+            /* Add other styling properties */
+        }
+        audio{
+            width: 93%;
+            padding-bottom: 15px;
+            
+        }
+        #a{
+            height: 70px;
+             width: 70px;
+             padding: 10px;
+             border-radius: 20px;
+        }
+        audio::-webkit-media-controls-panel{
+           background-image: url(songlistbg.jpeg);
+          }
+        </style>
+    </head>
+    <body style="color: black;">
+        <center>
+        <table>
+            <tr style="font-size: xx-large;">
+                <th>S.No</th>
+                <th>Track</th>
+                <th>Album</th>
+                <th>Duration </th>
+            </tr>
+            <tr onclick="showDiv('div2')" class="songlist">
+                <td>1</td>
+                <td><img src="Ee Hridayam.png" ><p style="float: left; padding-left:15px">Ee Hridayam</p></td>
+                <td>Yemaaya Chesave</td>
+                <td >5:29</td>
+            </tr>
+            <div id="div2" class="hidden">
+                <img src="Ee Hridayam.png" alt="" id="a">
+               <audio src="Ee Hridayam.mp3" controls></audio>
+            </div>
+            <tr onclick="showDiv('div1')" class="songlist">
+                <td>2</td>
+                <td><img src="Mental.png"><p style="float: left; padding-left:15px">Mental Manadhil</p></td>
+                <td>O Kadhal Kanmani </td>
+                <td>3:25</td>
+            </tr>
+            <div id="div1" class="hidden">
+                <img src="Mental.png" alt="" id="a">
+               <audio src="Mental.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div3')" class="songlist">
+                <td>3</td>
+                <td><img src="Poolane.png"><p style="float: left; padding-left:15px">Poolane Kunukeyamantaa</p></td>
+                <td>I-Manoharudu</td>
+                <td>5:08</td>
+            </tr>
+            <div id="div3" class="hidden">
+                <img src="Poolane.png" alt="" id="a">
+               <audio src="Poolane.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div4')" class="songlist">
+                <td>4</td>
+                <td><img src="Ishq.png"><p style="float: left; padding-left:15px">Ishq Bina</p></td>
+                <td>Taal</td>
+                <td>7:45</td>
+            </tr>
+            <div id="div4" class="hidden">
+                <img src="Ishq.png" alt="" id="a">
+               <audio src="Ishq.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div5')" class="songlist">
+                <td>5</td>
+                <td><img src="Maarudaani.png"><p style="float: left; padding-left:15px">Maarudaani</p></td>
+                <td>Sakkarakatti</td>
+                <td>6:57</td>
+            </tr>
+            <div id="div5" class="hidden">
+                <img src="Maarudaani.png" alt="" id="a">
+               <audio src="Maarudaani.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div6')" class="songlist">
+                <td>6</td>
+                <td><img src="Vennilave.png"><p style="float: left; padding-left:15px">Vennilave</p></td>
+                <td >Minasara Kanavu</td>
+                <td>5:51</td>
+            </tr>
+            <div id="div6" class="hidden">
+                <img src="Vennilave.png" alt="" id="a">
+               <audio src="Vennilavae.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div7')" class="songlist">
+                <td>7</td>
+                <td><img src="Aga Naga.png"><p style="float: left; padding-left:15px">Aga Naga</p></td>
+                <td >Ponniyan Selvan</td>
+                <td>4:03</td>
+            </tr>
+            <div id="div7" class="hidden">
+                <img src="Aga Naga.png" alt="" id="a">
+               <audio src="Aga Naga.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div8')" class="songlist">
+                <td>8</td>
+                <td><img src="Innum.png"><p style="float: left; padding-left:15px">Innum Konjam Neeram</p></td>
+                <td >Maryan</td>
+                <td>5:13</td>
+            </tr>
+            <div id="div8" class="hidden">
+                <img src="Innum.png" alt="" id="a">
+               <audio src="Innum.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div9')" class="songlist">
+                <td>9</td>
+                <td><img src="Jashn.png"><p style="float: left; padding-left:15px">Jashn-E-Baharaa</p></td>
+                <td >Jodhaa Akbar</td>
+                <td>5:15</td>
+            </tr>
+            <div id="div9" class="hidden">
+                <img src="Jashn.png" alt="" id="a">
+               <audio src="Jashn.mp3" controls></audio>
+            </div>
+             <tr  onclick="showDiv('div10')" class="songlist">
+                <td>10</td>
+                <td><img src="Param.png"><p style="float: left; padding-left:15px">Param Sundari</p></td>
+                <td>Mimi</td>
+                <td>3:20</td>
+            </tr>
+            <div id="div10" class="hidden">
+                <img src="Param.png" alt="" id="a">
+               <audio src="Param.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div11')" class="songlist">
+                <td>11</td>
+                <td><img src="Kadhal.png"><p style="float: left; padding-left:15px">Kadhal Sadugudu</p></td>
+            
+                <td>Alaipayuthey</td>
+                <td>4:02</td>
+            </tr>
+            <div id="div11" class="hidden">
+                <img src="Kadhal.png" alt="" id="a">
+               <audio src="Kadhal.mp3" controls></audio>
+            </div>
+            <tr  onclick="showDiv('div12')" class="songlist">
+                <td>12</td>
+                <td><img src="Sahana.png"><p style="float: left; padding-left:15px">Sahana Saral Thoo</p></td>
+               
+                <td>Sivaji</td>
+                <td>5:18</td>
+            </tr>
+            <div id="div12" class="hidden">
+                <img src="Sahana.png" alt="" id="a">
+               <audio src="Sahana.mp3" controls></audio>
+            </div>
+            <tr onclick="showDiv('div13')" class="songlist"> 
+                <td>13</td>
+                <td><img src="Ennadi.png"><p style="float: left; padding-left:15px">Ennadi Maayavi Nre</p></td>
+                <td>Vada Chennai</td>
+                <td>4:11</td>
+            </tr>
+            <div id="div13" class="hidden">
+                <img src="Ennadi.png" alt="" id="a">
+               <audio src="Ennadi.mp3" controls></audio>
+            </div>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <script>
+           // JavaScript function to show/hide divs
+           function showDiv(id) 
+           {
+            var divs = document.getElementsByClassName('hidden');
+            for (var i = 0; i < divs.length; i++) {
+                divs[i].style.display = 'none';
+            }
+            var selectedDiv = document.getElementById(id);
+            selectedDiv.style.display = 'block';
+        }
+            </script> 
+        </table>
+        </center>
+    </body>
+</html>2
